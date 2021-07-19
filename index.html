@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Valida CPF</title>
+  <link rel="stylesheet" href="css/cssGlobal.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</head>
+
+<body>
+
+  <section class="container">
+
+    <h1>Digite o CPF para validar:</h1>
+
+    <form class="form" action="" method="get">
+
+      <label for="inputCpf">
+        <input type="text" id="inputCpf" onkeypress="$(this).mask('000.000.000-00');">
+      </label>
+
+      <button onclick="validar()">Validar</button>
+
+    </form>
+
+    <h3 class="h31" style="display: none" >CPF Válido!</h3>
+    <h3 class="h32" style="display: none">CPF Inválido!</h3>
+
+  </section>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
